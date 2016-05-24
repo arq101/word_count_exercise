@@ -57,7 +57,7 @@ def _get_list_of_files(file_path):
 
 def _get_top_occurring_words(int_val):
     """
-    Gets a list of the most frquent words by sorting the dictionary based on its values.
+    Gets a list of the most frequent words by sorting the dictionary based on its values.
     Returns a list of tuples with a word and its frequency.
     """
     top_words = sorted(_all_words_read.items(), key=operator.itemgetter(1), reverse=True)
@@ -93,7 +93,7 @@ def _write_output(top_words, intersecting_words, unique_words):
     Writes the output to a file.
 
     :param top_words:
-        list containing contains tuples, eg. ('some_word' 1).
+        list containing tuples, eg. ('some_word' 1).
     :param intersecting_words:
         set object
     :param unique_words:
